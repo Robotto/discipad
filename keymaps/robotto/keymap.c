@@ -17,20 +17,14 @@
 
 #define _BL 0
 
-/*
-//https://github.com/qmk/qmk_firmware/blob/master/docs/feature_advanced_keycodes.md
-const key_override_t esc_key_override = ko_make_basic(MOD_MASK_SHIFT, KC_BSPC, KC_DEL); //shift+backspace -> delete
+const uint16_t PROGMEM clear_with_escape_key[] = {KC_PAST, KC_PMNS, COMBO_END};
+const uint16_t PROGMEM launch_calc[] = {KC_PPLS, KC_PENT, COMBO_END};
+const uint16_t PROGMEM close_program[] = {KC_P0, KC_PMNS, COMBO_END};
 
-// This globally defines all key overrides to be used
-const key_override_t **key_overrides = (const key_override_t *[]){
-  &esc_key_override,
-  NULL
-};
-*/
-
-const uint16_t PROGMEM comboboiiii[] = {KC_PAST, KC_PMNS, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(comboboiiii, KC_ESC),
+    COMBO(clear_with_escape_key, KC_ESC),
+    COMBO(launch_calc, KC_CALC),
+    COMBO(close_program, A(KC_F4)),
     //COMBO(test_combo2, LCTL(KC_Z)), // keycodes with modifiers are possible too!
 };
 

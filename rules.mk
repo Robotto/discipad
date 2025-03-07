@@ -13,7 +13,7 @@ COMBO_ENABLE = yes
 #
 #KEY_OVERRIDE_ENABLE = yes #https://github.com/qmk/qmk_firmware/blob/master/docs/feature_key_overrides.md (for alt+4 -> alt+F4 and super+c -> calc)
 
-BOOTMAGIC_ENABLE = lite     # Enable Bootmagic Lite
+BOOTMAGIC_ENABLE = yes     # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no        # Console for debug

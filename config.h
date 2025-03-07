@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 //https://github.com/qmk/qmk_firmware/blob/master/docs/feature_combo.md
-#define COMBO_COUNT 1
+#define COMBO_COUNT 3
 
 #define VENDOR_ID       0x6B62
 #define PRODUCT_ID      0x1769
